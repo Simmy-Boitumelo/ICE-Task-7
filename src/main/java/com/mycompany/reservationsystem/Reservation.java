@@ -69,7 +69,7 @@ public class Reservation {
     public String makeReservation(String bookingCode,String password){
         
         if(!checkBookingCode(bookingCode)){
-            System.out.println("Booking code is incorrectly formatted.");
+            return "Booking code is incorrectly formatted.";
         }
         
         if(!checkPasswordComplexity(password)){
